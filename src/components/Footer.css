@@ -1,0 +1,23 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  height: 200px; /* Set a fixed height for the footer */
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

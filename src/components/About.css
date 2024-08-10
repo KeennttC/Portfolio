@@ -1,0 +1,212 @@
+/* Keyframes for the grow animation */
+@keyframes grow {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Wrapper for the About page with background image */
+.about-page-wrapper {
+  background-image: url('http://getwallpapers.com/wallpaper/full/2/1/4/1402363-free-download-cool-plain-backgrounds-2560x1600-lockscreen.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures the wrapper covers the entire viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding to suit your design */
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* Container for the whole About page */
+.about-container {
+  background-color: rgba(178, 178, 243, 0.9); /* Semi-transparent background to see the image through */
+  border-radius: 15px;
+  border: 5px solid #04faf6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  padding: 40px;
+  width: 100%;
+  margin: 20px 0; /* Added margin for spacing */
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* Container for image and about text side by side */
+.about-main {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px; /* Reduced space below the image */
+  width: 100%; /* Full width */
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* Profile image styling */
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 0; /* Square shape */
+  border: 6px solid #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-right: 1rem; /* Reduced margin to 1rem */
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* New container for About Me and Specialist sections */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0; /* Grey background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Adjusted max-width */
+  margin: 0; /* No extra margin */
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* Styling for the about text */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 10px; /* Adjusted bottom margin to reduce space */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* Title and content styling */
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+/* Specialist section styling */
+.specialist-container {
+  background-color: #ffffff;
+  border-left: 5px solid #e91e63; /* Pink-violet color */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0; /* Removed top margin to reduce space */
+  margin-bottom: 1.5rem; /* Adjusted bottom margin for better spacing */
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* New statistics section styling */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px; /* Same max-width as info-container */
+  margin-top: 20px; /* Space between image and stats */
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+.stat {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #031c34;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Container for skills and experience sections */
+.skills-experience-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* Skills and Experience section styling */
+.skills-container, .experience-container {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  border-left: 5px solid #e20960;
+  min-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: grow 0.5s ease-out; /* Faster grow animation */
+}
+
+/* Titles for skills and experience */
+.skills-container h2, .experience-container h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* List items styling */
+.skills-container ul, .experience-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills-container ul li, .experience-container ul li {
+  font-size: 1.125rem;
+  color: #34495e;
+}
+
+/* Navigation buttons styling */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  z-index: 1000;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 5px 13px;
+  font-size: 0.875rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.navigation-buttons .nav-button {
+  margin: 0 5px;
+}

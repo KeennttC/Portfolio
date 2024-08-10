@@ -1,0 +1,171 @@
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.view-more-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  position: relative;
+  background: url('https://wallpaperaccess.com/full/3430380.jpg') no-repeat center center; /* Replace with your copied image URL */
+  background-size: cover; /* Ensure the background image covers the entire container */
+}
+
+.view-more-background {
+  background: linear-gradient(270deg, #1e90ff, #2ed573, #ff6b6b);
+  background-size: 600% 600%;
+  animation: gradientBackground 10s ease infinite;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(8, 209, 38, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-more-background::before,
+.view-more-background::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #1e90ff, #2ed573);
+  border-radius: 50%;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+.view-more-background::before {
+  top: -50px;
+  left: -50px;
+}
+
+.view-more-background::after {
+  bottom: -50px;
+  right: -50px;
+}
+
+.teasers-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.teaser {
+  background: #e8ebed;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  animation: float 3s ease-in-out infinite;
+}
+
+.teaser:hover {
+  transform: translateY(-150px);
+  box-shadow: 0 96px 144px rgba(0, 0, 0, 0.4);
+}
+
+.teaser h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.teaser h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #1abc9c;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.teaser p {
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.teaser.about {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.teaser.projects {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.teaser.contact {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.home-button {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #1c86ee;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+}

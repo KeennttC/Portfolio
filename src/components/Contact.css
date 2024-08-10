@@ -1,0 +1,164 @@
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-container {
+  max-width: 1200px; /* Increased max-width for better layout */
+  margin: 0 auto;
+  padding: 20px;
+  display: flex; /* Flexbox for layout */
+  flex-direction: column;
+  align-items: center; /* Center align items */
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between the form and the contact info */
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px; /* Minimum width for responsiveness */
+  display: flex;
+  flex-direction: column;
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form .form-group textarea {
+  resize: vertical;
+}
+
+.contact-form .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.other-contact-info {
+  flex: 1;
+  min-width: 250px; /* Minimum width for responsiveness */
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.other-contact-info h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.other-contact-info p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-media-icons a {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #007bff;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 8px 15px; /* Adjusted padding */
+  font-size: 0.875rem; /* Smaller font size */
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db; /* Blue color */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  flex: 1; /* Make buttons take up equal space */
+  margin: 0 5px; /* Space between buttons */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.nav-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
