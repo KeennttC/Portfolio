@@ -109,7 +109,8 @@
   border-radius: 15px;
   flex: 1;
   border-left: 5px solid #e20960;
-  min-width: 300px;
+  min-width: 200px; /* Reduced width */
+  min-height: 400px; /* Increased height */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: grow 0.5s ease-out; /* Faster grow animation */
 }
@@ -165,4 +166,19 @@
 
 .navigation-buttons .nav-button {
   margin: 0 5px;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .skills-container, .experience-container {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 100%;
+    margin: 0; /* Remove margin if needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container, .experience-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
 }

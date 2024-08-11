@@ -134,31 +134,37 @@
   color: #007bff;
 }
 
+/* Navigation buttons styling */
 .navigation-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 200px;
-  margin-top: 20px;
+  z-index: 1000;
 }
 
 .nav-button {
   display: inline-block;
-  padding: 8px 15px; /* Adjusted padding */
-  font-size: 0.875rem; /* Smaller font size */
+  padding: 8px 16px; /* Adjusted padding to increase button size */
+  font-size: 1rem; /* Adjusted font size for text inside the button */
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background-color: #3498db; /* Blue color */
+  background-color: #3498db;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.2s;
-  flex: 1; /* Make buttons take up equal space */
-  margin: 0 5px; /* Space between buttons */
-  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .nav-button:hover {
   background-color: #2980b9;
   transform: scale(1.05);
+}
+
+.navigation-buttons .nav-button {
+  margin: 0 5px;
 }
