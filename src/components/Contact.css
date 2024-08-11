@@ -1,3 +1,9 @@
+/* General Body Styling */
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Keyframes for Animations */
 @keyframes slideInFromLeft {
   from {
     opacity: 0;
@@ -31,6 +37,7 @@
   }
 }
 
+/* Contact Container */
 .contact-container {
   max-width: 1200px; /* Increased max-width for better layout */
   margin: 0 auto;
@@ -134,7 +141,7 @@
   color: #007bff;
 }
 
-/* Navigation buttons styling */
+/* Navigation Buttons Styling */
 .navigation-buttons {
   display: flex;
   justify-content: center;

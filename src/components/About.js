@@ -16,7 +16,7 @@ function About() {
           <div className="about-text">
             <h1><center>About Me</center></h1>
             <p>
-              My name is <strong>Kent Oliver C. Cartagena</strong>. I am 19 years old, living in Sunny Meadows Subdivision, Kidapawan City. I am a proud student of Notre Dame of Kidapawan Colleges, pursuing a Bachelor of Science in Information Technology. I completed my junior high school education at KCNHS and am now focused on completing my studies at this college. My hobbies include playing online games, solving puzzles, board games, and listening to music.
+              My name is Kent Oliver C. Cartagena. I am 19 years old, living in Sunny Meadows Subdivision, Kidapawan City. I am a proud student of Notre Dame of Kidapawan Colleges, pursuing a Bachelor of Science in Information Technology. I completed my junior high school education at KCNHS and am now focused on completing my studies at this college. My hobbies include playing online games, solving puzzles, board games, and listening to music.
             </p>
           </div>
         </div>
