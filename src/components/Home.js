@@ -5,7 +5,7 @@ import { FaCode, FaPaintBrush, FaConciergeBell } from 'react-icons/fa';
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="container-fluid home-container">
       <div className="bottom-section">
         <h1 className="animated-text name-heading">KENT OLIVER C. CARTAGENA</h1>
         <div className="home-content">

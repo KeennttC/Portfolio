@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
 import './ViewMore.css';
 
 function ViewMore() {
   return (
-    <div className="view-more-container">
+    <div className="container-fluid view-more-container">
       <div className="view-more-background">
         <div className="teasers-section">
           <Link to="/about" className="teaser about">

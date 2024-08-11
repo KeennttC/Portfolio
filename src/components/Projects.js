@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
 import './Projects.css';
 
 function Projects() {
@@ -14,8 +15,8 @@ function Projects() {
   };
 
   return (
-    <div className="outer-container">
-      <div className="inner-container">
+    <div className="container-fluid outer-container">
+      <div className="container inner-container">
         <div className="projects-container">
           <h1>My Projects</h1>
           <div className="projects-grid">
