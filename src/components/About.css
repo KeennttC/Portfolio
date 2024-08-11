@@ -148,8 +148,8 @@
 
 .nav-button {
   display: inline-block;
-  padding: 8px 16px; /* Adjusted padding to increase button size */
-  font-size: 1rem; /* Adjusted font size for text inside the button */
+  padding: 10px 20px; /* Increased padding for better touch target */
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
   color: #fff;
@@ -165,7 +165,15 @@
 }
 
 .navigation-buttons .nav-button {
-  margin: 0 5px;
+  margin: 0 8px; /* Increased margin for better spacing on smaller screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav-button {
+    font-size: 0.9rem; /* Slightly smaller font size for small screens */
+    padding: 8px 16px; /* Adjust padding if necessary */
+  }
 }
 
 /* Media queries for responsive adjustments */

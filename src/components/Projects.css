@@ -164,35 +164,7 @@
 }
 
 /* Navigation Buttons Styling */
-.navigation-buttons {
-  display: flex;
-  justify-content: space-between; /* Spread the buttons apart */
-  position: fixed; /* Fixed positioning so it stays at the bottom */
-  bottom: 20px; /* Distance from the bottom of the viewport */
-  left: 0;
-  right: 0;
-  margin: 0 20px; /* Add horizontal margin */
-  box-sizing: border-box; /* Include margin in the element's width */
-  z-index: 1000; /* Ensure it is above other content */
-}
 
-.nav-button {
-  display: inline-block;
-  padding: 8px 16px; /* Adjusted padding to increase button size */
-  font-size: 1rem; /* Adjusted font size for text inside the button */
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #3498db;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.nav-button:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
-}
 
 /* Modal Overlay */
 .modal-overlay {
