@@ -152,6 +152,8 @@ body {
   width: 100%;
   max-width: 200px;
   z-index: 1000;
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding around the buttons */
 }
 
 .nav-button {
@@ -165,13 +167,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.2s;
+  margin: 0 5px; /* Margin for spacing between buttons */
 }
 
 .nav-button:hover {
   background-color: #2980b9;
   transform: scale(1.05);
-}
-
-.navigation-buttons .nav-button {
-  margin: 0 5px;
 }

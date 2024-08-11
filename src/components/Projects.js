@@ -8,10 +8,12 @@ function Projects() {
 
   const handleOpenModal = (imageSrc) => {
     setModalImage(imageSrc);
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
   };
 
   const handleCloseModal = () => {
     setModalImage(null);
+    document.body.style.overflow = 'auto'; // Restore scrolling when modal is closed
   };
 
   return (
@@ -80,7 +82,7 @@ function Projects() {
           </div>
 
           {modalImage && (
-            <div className="modal-overlay" onClick={handleCloseModal}>
+            <div className="modal-overlay visible" onClick={handleCloseModal}>
               <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <img src={modalImage} alt="Project Preview" className="modal-image" />
               </div>

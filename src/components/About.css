@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px; /* Adjust padding to suit your design */
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
 }
 
 /* Container for the whole About page */
@@ -22,7 +22,7 @@
   width: 100%; /* Full width */
   padding: 40px;
   margin: 20px 0; /* Added margin for spacing */
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
@@ -35,7 +35,7 @@
   align-items: center; /* Center items horizontally */
   margin-bottom: 40px; /* Reduced space below the image */
   width: 100%; /* Full width */
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
 }
 
 /* Profile image styling */
@@ -48,7 +48,7 @@
   border: 6px solid #fff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px; /* Margin below image */
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
 }
 
 /* Styling for the about text */
@@ -61,7 +61,7 @@
   padding: 20px;
   margin-bottom: 10px; /* Adjusted bottom margin to reduce space */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
   text-align: center; /* Center text inside the block */
 }
 
@@ -87,7 +87,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 0; /* Removed top margin to reduce space */
   margin-bottom: 1.5rem; /* Adjusted bottom margin for better spacing */
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
   text-align: center; /* Center text inside the block */
 }
 
@@ -98,7 +98,7 @@
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
 }
 
 /* Skills and Experience section styling */
@@ -112,7 +112,7 @@
   min-width: 200px; /* Reduced width */
   min-height: 400px; /* Increased height */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: grow 0.5s ease-out; /* Faster grow animation */
+  animation: grow 0.5s ease-out, appear 0.5s ease-out; /* Faster grow animation and appear transition */
 }
 
 /* Titles for skills and experience */
@@ -180,5 +180,17 @@
 @media (max-width: 480px) {
   .skills-container, .experience-container {
     padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Keyframes for Appear Animation */
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: add vertical movement */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Reset vertical movement */
   }
 }
