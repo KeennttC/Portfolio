@@ -134,6 +134,7 @@
 }
 
 /* Navigation buttons styling */
+/* Navigation Buttons Container */
 .navigation-buttons {
   display: flex;
   justify-content: center;
@@ -141,14 +142,16 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  max-width: 200px;
+  width: auto; /* Allow the container to adjust based on button width */
+  max-width: 90%; /* Adjust to a percentage or different value for responsiveness */
   z-index: 1000;
+  padding: 0 10px; /* Add some padding for better alignment */
 }
 
+/* Navigation Button */
 .nav-button {
   display: inline-block;
-  padding: 10px 20px; /* Increased padding for better touch target */
+  padding: 10px 20px;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
@@ -164,8 +167,17 @@
   transform: scale(1.05);
 }
 
+/* Responsive Margin */
 .navigation-buttons .nav-button {
-  margin: 0 8px; /* Increased margin for better spacing on smaller screens */
+  margin: 0 8px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+  .nav-button {
+    font-size: 0.9rem; /* Slightly smaller font size for small screens */
+    padding: 8px 16px; /* Adjust padding if necessary */
+  }
 }
 
 /* Responsive adjustments */
